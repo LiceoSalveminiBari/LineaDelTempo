@@ -7,8 +7,7 @@ html {
 
 body {
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
 }
 
 h1 {
@@ -19,10 +18,10 @@ h1 {
   text-align: center;
   border-radius: 50% !important;
   background-color: #a6a6a6 !important;
-  width: 50px !important;
-  height: 50px !important;
+  width: 25px !important;
+  height: 25px !important;
   color: white !important;
-  font-size: 20px !important;
+  font-size: 15px !important;
   position: absolute !important;
   top: 275px !important;
   opacity: 0.5;
@@ -61,7 +60,8 @@ h1 {
 }
 
 .physicist p {
-  margin: 0 35px;
+  margin: 0 25px;
+  margin-bottom: 25px;
   font-size: 14px;
   text-align: center;
 }
@@ -166,6 +166,8 @@ footer img {
   }
 
   .work {
+    margin-left: 60px;
+    margin-right: 60px;
     width: 400px;
     height: 400px;
   }
