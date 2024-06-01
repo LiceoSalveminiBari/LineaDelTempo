@@ -133,12 +133,12 @@ h1 {
   touch-action: manipulation;  /* Prevents default double-tap zoom behavior */
 }
 
-.button:hover, .button:clicked {
+.button:hover, .button.clicked {
   background-color: white;
   color: #ff4d4d;
 }
 
-.button:hover a, .button:clicked a {
+.button:hover a, .button.clicked a {
   color: #ff4d4d;
 }
 
