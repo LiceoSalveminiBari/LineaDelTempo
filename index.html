@@ -141,7 +141,7 @@
             <h4><i>Opticks</i></h4>
             <div class="container">
                 <button class="button">
-                    <a href="">Approfondisci</a>
+                    <a href="opticks.html">Approfondisci</a>
                 </button>
             </div>
         </div>
@@ -152,11 +152,7 @@
 
             buttons.forEach(function(button) {
                 button.addEventListener('click', function(event) {
-                    event.preventDefault(); // Evita il comportamento predefinito del link
-                    var link = this.querySelector('a'); // Trova il link all'interno del pulsante
-                    if (link) {
-                        window.location.href = link.href; // Reindirizza alla URL del link
-                    }
+                    // Lascia che il comportamento predefinito del link si verifichi
                 });
             });
         });
