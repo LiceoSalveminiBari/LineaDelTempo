@@ -191,7 +191,7 @@
 		checkVisibility: true,
 
 		mouseDrag: true,
-		touchDrag: false,
+		touchDrag: true,
 		pullDrag: true,
 		freeDrag: false,
 
