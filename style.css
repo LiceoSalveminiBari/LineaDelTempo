@@ -109,6 +109,7 @@ h1 {
 .container a {
   display: block;
   text-decoration: none;
+  color: white;
 }
 
 .container a:visited {
@@ -139,6 +140,10 @@ h1 {
 
 .button:hover a {
   color: #ff4d4d;
+}
+
+.button:visited {
+  color:white;
 }
 
 footer {
