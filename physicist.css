@@ -75,6 +75,18 @@ header {
     padding: 20px;
     margin: 0px;
   }
+
+  footer {
+    padding: 25px;
+    background-color: #a6a6a6;
+    img{
+      display: block;
+      float: none;
+      width: 350px;
+      height: auto;
+    };
+  }
+
 }
 
 @media (min-width: 800px) {
@@ -131,6 +143,17 @@ header {
     padding: 20px;
     margin: 0px;
     border: 20px;
+  }
+
+  footer {
+    padding: 25px;
+    background-color: #a6a6a6;
+    img{
+      display: block;
+      float: none;
+      width: 400px;
+      height: auto;
+    };
   }
 }
 
@@ -207,13 +230,3 @@ ul {
   }
 }
 
-footer {
-  padding: 25px;
-  background-color: #a6a6a6;
-  img{
-    display: block;
-    float: none;
-    width: 400px;
-    height: auto;
-  };
-}
