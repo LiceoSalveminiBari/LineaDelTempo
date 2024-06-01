@@ -133,15 +133,6 @@ h1 {
   touch-action: manipulation;  /* Prevents default double-tap zoom behavior */
 }
 
-.button:hover {
-  background-color: white;
-  color: #ff4d4d;
-}
-
-.button:hover a {
-  color: #ff4d4d;
-}
-
 footer {
   padding: 25px;
   background-color: #a6a6a6;
