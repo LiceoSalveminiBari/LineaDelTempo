@@ -152,7 +152,7 @@ footer img {
   height: auto;
 }
 
-@media (min-width: 800px) and (pointer: fine) and  (hover: hover) {
+@media (min-width: 800px) {
   .physicist {
     margin: 0 60px;
     margin-bottom: 25px;
