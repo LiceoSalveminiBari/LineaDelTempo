@@ -135,24 +135,18 @@
 
             buttons.forEach(function (button) {
                 button.addEventListener('click', function (event) {
-                    event.preventDefault();
                     var href = button.getAttribute('data-href');
                     if (href) {
                         button.classList.add('clicked');
-                        setTimeout(function () {
-                            window.location.href = href;
-                        }, 200);
+                        window.location.href = href;
                     }
                 });
 
                 button.addEventListener('touchstart', function (event) {
-                    event.preventDefault();
                     var href = button.getAttribute('data-href');
                     if (href) {
                         button.classList.add('clicked');
-                        setTimeout(function () {
-                            window.location.href = href;
-                        }, 200);
+                        window.location.href = href;
                     }
                 });
             });
