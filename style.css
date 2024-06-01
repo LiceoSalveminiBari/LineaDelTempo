@@ -131,6 +131,16 @@ h1 {
   justify-content: center;
   transition: all 0.3s ease;
   touch-action: manipulation;  /* Prevents default double-tap zoom behavior */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: #ff4d4d;
+}
+
+.button:hover a {
+  color: #ff4d4d;
 }
 
 footer {

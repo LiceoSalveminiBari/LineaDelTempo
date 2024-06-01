@@ -55,7 +55,7 @@
                 scontrandosi con la Chiesa cattolica.</p>
             <div class="container">
                 <button class="button">
-                    <a href="galileo-galilei.html">Approfondisci</a>
+                    <a href="galileo-galilei.html" onclick="myFunction()">Approfondisci</a>
                 </button>
             </div>
         </div>
@@ -146,7 +146,11 @@
             </div>
         </div>
     </div>
-    <script src="risorse/button.js"></script>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+          window.location.href = "galileo-galilei.html"; // URL della pagina da raggiungere
+        });
+        </script>
 </body>
 <footer>
     <a href="https://www.liceosalveminibari.edu.it/" target=”_blank”  rel="noreferrer noopener nofollow"><img src="images/logo-salvemini.png"></a>
