@@ -148,11 +148,22 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            var isTouchDevice = 'ontouchstart' in document.documentElement;
+
+            var event = isTouchDevice ? 'touchstart' : 'click';
+
             var buttons = document.querySelectorAll('.container .button');
 
             buttons.forEach(function(button) {
-                button.addEventListener('click', function(event) {
-                    // Lascia che il comportamento predefinito del link si verifichi
+                button.addEventListener(event, function() {
+                    // Contenuto dell'evento di clic/touch
+                    var link = this.querySelector('a');
+                    if (link && !isTouchDevice) { // Se è un link e si sta interagendo da un dispositivo desktop
+                        window.location.href = link.href;
+                    } else {
+                        // Esegui altre azioni se necessario per dispositivi mobili
+                        // Nel nostro caso, non è necessario fare nulla
+                    }
                 });
             });
         });

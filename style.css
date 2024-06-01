@@ -132,6 +132,7 @@ h1 {
   transition: all 0.3s ease;
   touch-action: manipulation;  /* Prevents default double-tap zoom behavior */
   cursor: pointer;
+  margin-bottom:25px;
 }
 
 .button:hover {
