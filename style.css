@@ -25,6 +25,7 @@ h1 {
   position: absolute !important;
   top: 275px !important;
   opacity: 0.5;
+  user-select: none;  /* Prevents text selection on double click */
 }
 
 .owl-prev:hover, .owl-next:hover {
@@ -41,11 +42,11 @@ h1 {
 
 .physicist {
   margin: 15px;
+  margin-bottom: 10px;
   border-radius: 20px;
   width: 350px;
   height: 620px;
   background-color: white;
-  margin-bottom: 10px;
 }
 
 .physicist h4 {
@@ -55,13 +56,12 @@ h1 {
 }
 
 .physicist img {
-  transform: scale(0.7, 0.7);
+  transform: scale(0.7);
   border-radius: 30px;
 }
 
 .physicist p {
-  margin: 0 25px;
-  margin-bottom: 25px;
+  margin: 0 25px 25px 25px;
   font-size: 14px;
   text-align: center;
 }
@@ -74,19 +74,17 @@ h1 {
   background-color: white;
 }
 
-.work h4, .work h5 {
+.work h4 {
+  font-size: 25px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .work h5 {
-  padding-top: 10px;
   font-size: 20px;
-}
-
-.work h4 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .work p {
@@ -132,6 +130,7 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  touch-action: manipulation;  /* Prevents default double-tap zoom behavior */
 }
 
 .button:hover {
@@ -153,21 +152,20 @@ footer img {
   height: auto;
 }
 
+/* Responsive styles */
 @media (min-width: 800px) {
   .physicist {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 60px;
     width: 400px;
     height: 620px;
   }
 
   .physicist img {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.9);
   }
 
   .work {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 60px;
     width: 400px;
     height: 400px;
   }
