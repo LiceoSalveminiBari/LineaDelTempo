@@ -148,11 +148,15 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var buttons = document.querySelectorAll('.button');
+            var buttons = document.querySelectorAll('.container .button');
 
             buttons.forEach(function(button) {
-                button.addEventListener('touchstart', function() {
-                    this.click();
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evita il comportamento predefinito del link
+                    var link = this.querySelector('a'); // Trova il link all'interno del pulsante
+                    if (link) {
+                        window.location.href = link.href; // Reindirizza alla URL del link
+                    }
                 });
             });
         });
