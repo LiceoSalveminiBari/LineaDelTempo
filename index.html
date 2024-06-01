@@ -146,6 +146,29 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var buttons = document.querySelectorAll('.container .button');
+
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function(event) {
+                    var link = this.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                });
+
+                button.addEventListener('touchstart', function(event) {
+                    var link = this.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 <footer>
     <a href="https://www.liceosalveminibari.edu.it/" target=”_blank”  rel="noreferrer noopener nofollow"><img src="images/logo-salvemini.png"></a>
