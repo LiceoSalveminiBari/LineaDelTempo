@@ -33,10 +33,9 @@
                         items: 3
                     }
                 }
-            })
+            });
         });
     </script>
-
 </head>
 
 <header>
@@ -46,7 +45,6 @@
 <body>
 
     <div class="owl-carousel owl-theme">
-
         <div class="physicist">
             <img src="images/galileo-galilei.jpg">
             <h4>Galileo Galilei</h4>
@@ -148,18 +146,20 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var buttons = document.querySelectorAll('.container .button');
 
-            buttons.forEach(function(button) {
-                button.addEventListener('click', function(event) {
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
                     var link = this.querySelector('a');
                     if (link) {
                         window.location.href = link.href;
                     }
                 });
 
-                button.addEventListener('touchstart', function(event) {
+                button.addEventListener('touchstart', function (event) {
+                    event.preventDefault();
                     var link = this.querySelector('a');
                     if (link) {
                         window.location.href = link.href;
@@ -168,12 +168,13 @@
             });
         });
     </script>
-
 </body>
+
 <footer>
-    <a href="https://www.liceosalveminibari.edu.it/" target=”_blank”  rel="noreferrer noopener nofollow"><img src="images/logo-salvemini.png"></a>
+    <a href="https://www.liceosalveminibari.edu.it/" target="_blank" rel="noreferrer noopener nofollow"><img src="images/logo-salvemini.png"></a>
     <p>Via Prezzolini, 9 - 70126 Bari (BA) | Tel. +39 080 5548739 | Fax. +39 080 5548742</p>
     <p>mail: BAPS060001@istruzione.it | pec: BAPS060001@pec.istruzione.it</p>
     <p>Cod. ministeriale: BAPS060001 | Cod. fiscale: 80016760722</p>
 </footer>
+
 </html>
