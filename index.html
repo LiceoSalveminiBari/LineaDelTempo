@@ -138,7 +138,10 @@
                     event.preventDefault();
                     var href = button.getAttribute('data-href');
                     if (href) {
-                        window.location.href = href;
+                        button.classList.add('clicked');
+                        setTimeout(function () {
+                            window.location.href = href;
+                        }, 200);
                     }
                 });
 
@@ -146,7 +149,10 @@
                     event.preventDefault();
                     var href = button.getAttribute('data-href');
                     if (href) {
-                        window.location.href = href;
+                        button.classList.add('clicked');
+                        setTimeout(function () {
+                            window.location.href = href;
+                        }, 200);
                     }
                 });
             });
